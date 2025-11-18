@@ -364,7 +364,7 @@ elif page == "Model Performance":
             y_pred = model.predict(X)
 
             r2 = r2_score(y, y_pred)
-            rmse = mean_squared_error(y, y_pred, squared=False)
+            rmse = mean_squared_error(y, y_pred)
             mae = mean_absolute_error(y, y_pred)
 
             st.write(f"**R² Score:** {r2:.4f}")
@@ -395,4 +395,5 @@ elif page == "About":
     
     We trained the model cleanly and used Label Encoders that match the dataset, so the app is stable and error-free.
     """)
+
 
